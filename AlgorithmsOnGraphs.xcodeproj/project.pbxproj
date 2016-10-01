@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2736D2AB1D9D8C170058EF6B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2736D2AA1D9D8C170058EF6B /* main.cpp */; };
 		273D14361D90454B0083D771 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 273D14351D90454B0083D771 /* main.cpp */; };
+		27CE7ADA1DA00B58007CF787 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27CE7AD91DA00B58007CF787 /* main.cpp */; };
 		27D69EC91D904A4800DC3773 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27D69EC81D904A4800DC3773 /* main.cpp */; };
 		27E4A03D1D9C5FEF0033297D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27E4A03C1D9C5FEF0033297D /* main.cpp */; };
 		27ED35581D9D87F30080039B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27ED35571D9D87F30080039B /* main.cpp */; };
@@ -25,6 +26,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		273D14301D90454B0083D771 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		27CE7AD51DA00B58007CF787 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -67,6 +77,8 @@
 		2736D2AA1D9D8C170058EF6B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		273D14321D90454B0083D771 /* FindingAnExitFromAMaze */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FindingAnExitFromAMaze; sourceTree = BUILT_PRODUCTS_DIR; };
 		273D14351D90454B0083D771 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		27CE7AD71DA00B58007CF787 /* ComputingTheMinimumNumberOfFlightSegments */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ComputingTheMinimumNumberOfFlightSegments; sourceTree = BUILT_PRODUCTS_DIR; };
+		27CE7AD91DA00B58007CF787 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		27D69EC61D904A4800DC3773 /* AddingExitsToAMaze */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AddingExitsToAMaze; sourceTree = BUILT_PRODUCTS_DIR; };
 		27D69EC81D904A4800DC3773 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		27E4A03A1D9C5FEF0033297D /* CheckingConsistencyOfCSCurriculumn */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CheckingConsistencyOfCSCurriculumn; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +96,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		273D142F1D90454B0083D771 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27CE7AD41DA00B58007CF787 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -139,6 +158,7 @@
 				27E4A03A1D9C5FEF0033297D /* CheckingConsistencyOfCSCurriculumn */,
 				27ED35551D9D87F30080039B /* DeterminingAnOrderOfCourses */,
 				2736D2A81D9D8C170058EF6B /* CheckingWhetherAnyIntersectionInACityIsReachableFromAnyOther */,
+				27CE7AD71DA00B58007CF787 /* ComputingTheMinimumNumberOfFlightSegments */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,10 +174,27 @@
 		279631491D90415200FBCC19 = {
 			isa = PBXGroup;
 			children = (
+				27CE7AD21DA00ADC007CF787 /* Week 3 */,
 				27E4A0351D9C5FC40033297D /* Week 2 */,
 				273D142D1D9041C80083D771 /* Week 1 */,
 				273D14331D90454B0083D771 /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		27CE7AD21DA00ADC007CF787 /* Week 3 */ = {
+			isa = PBXGroup;
+			children = (
+				27CE7AD81DA00B58007CF787 /* ComputingTheMinimumNumberOfFlightSegments */,
+			);
+			path = "Week 3";
+			sourceTree = "<group>";
+		};
+		27CE7AD81DA00B58007CF787 /* ComputingTheMinimumNumberOfFlightSegments */ = {
+			isa = PBXGroup;
+			children = (
+				27CE7AD91DA00B58007CF787 /* main.cpp */,
+			);
+			path = ComputingTheMinimumNumberOfFlightSegments;
 			sourceTree = "<group>";
 		};
 		27D69EC71D904A4800DC3773 /* AddingExitsToAMaze */ = {
@@ -231,6 +268,23 @@
 			productReference = 273D14321D90454B0083D771 /* FindingAnExitFromAMaze */;
 			productType = "com.apple.product-type.tool";
 		};
+		27CE7AD61DA00B58007CF787 /* ComputingTheMinimumNumberOfFlightSegments */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27CE7ADB1DA00B58007CF787 /* Build configuration list for PBXNativeTarget "ComputingTheMinimumNumberOfFlightSegments" */;
+			buildPhases = (
+				27CE7AD31DA00B58007CF787 /* Sources */,
+				27CE7AD41DA00B58007CF787 /* Frameworks */,
+				27CE7AD51DA00B58007CF787 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ComputingTheMinimumNumberOfFlightSegments;
+			productName = ComputingTheMinimumNumberOfFlightSegments;
+			productReference = 27CE7AD71DA00B58007CF787 /* ComputingTheMinimumNumberOfFlightSegments */;
+			productType = "com.apple.product-type.tool";
+		};
 		27D69EC51D904A4800DC3773 /* AddingExitsToAMaze */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 27D69ECC1D904A4800DC3773 /* Build configuration list for PBXNativeTarget "AddingExitsToAMaze" */;
@@ -298,6 +352,10 @@
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
 					};
+					27CE7AD61DA00B58007CF787 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
 					27D69EC51D904A4800DC3773 = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
@@ -329,6 +387,7 @@
 				27E4A0391D9C5FEF0033297D /* CheckingConsistencyOfCSCurriculumn */,
 				27ED35541D9D87F30080039B /* DeterminingAnOrderOfCourses */,
 				2736D2A71D9D8C170058EF6B /* CheckingWhetherAnyIntersectionInACityIsReachableFromAnyOther */,
+				27CE7AD61DA00B58007CF787 /* ComputingTheMinimumNumberOfFlightSegments */,
 			);
 		};
 /* End PBXProject section */
@@ -347,6 +406,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				273D14361D90454B0083D771 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27CE7AD31DA00B58007CF787 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27CE7ADA1DA00B58007CF787 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,6 +631,95 @@
 		2796314F1D90415200FBCC19 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+			};
+			name = Release;
+		};
+		27CE7ADC1DA00B58007CF787 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		27CE7ADD1DA00B58007CF787 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -844,6 +1000,7 @@
 				2736D2AD1D9D8C170058EF6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		273D14371D90454B0083D771 /* Build configuration list for PBXNativeTarget "FindingAnExitFromAMaze" */ = {
 			isa = XCConfigurationList;
@@ -862,6 +1019,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		27CE7ADB1DA00B58007CF787 /* Build configuration list for PBXNativeTarget "ComputingTheMinimumNumberOfFlightSegments" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27CE7ADC1DA00B58007CF787 /* Debug */,
+				27CE7ADD1DA00B58007CF787 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		27D69ECC1D904A4800DC3773 /* Build configuration list for PBXNativeTarget "AddingExitsToAMaze" */ = {
 			isa = XCConfigurationList;
