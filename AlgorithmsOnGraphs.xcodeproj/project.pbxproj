@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		270C15BE1DAE789C00C9BB4D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270C15BD1DAE789C00C9BB4D /* main.cpp */; };
 		270E4E621DA717EC006FBECD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270E4E611DA717EC006FBECD /* main.cpp */; };
 		27233E411DAA9D1D00845391 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27233E401DAA9D1D00845391 /* main.cpp */; };
 		2736D2AB1D9D8C170058EF6B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2736D2AA1D9D8C170058EF6B /* main.cpp */; };
@@ -19,6 +20,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		270C15B91DAE789C00C9BB4D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		270E4E5D1DA717EC006FBECD /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -103,6 +113,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		270C15BB1DAE789C00C9BB4D /* ExchangingMoneyOptimally */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ExchangingMoneyOptimally; sourceTree = BUILT_PRODUCTS_DIR; };
+		270C15BD1DAE789C00C9BB4D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		270E4E5F1DA717EC006FBECD /* ComputingTheMinimumCostOfAFlight */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ComputingTheMinimumCostOfAFlight; sourceTree = BUILT_PRODUCTS_DIR; };
 		270E4E611DA717EC006FBECD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		27233E3E1DAA9D1D00845391 /* DetectingAnomaliesInCurrencyExchangeRates */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DetectingAnomaliesInCurrencyExchangeRates; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +136,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		270C15B81DAE789C00C9BB4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		270E4E5C1DA717EC006FBECD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -190,9 +209,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		270C15BC1DAE789C00C9BB4D /* ExchangingMoneyOptimally */ = {
+			isa = PBXGroup;
+			children = (
+				270C15BD1DAE789C00C9BB4D /* main.cpp */,
+			);
+			path = ExchangingMoneyOptimally;
+			sourceTree = "<group>";
+		};
 		270E4E5A1DA717B8006FBECD /* Week 4 */ = {
 			isa = PBXGroup;
 			children = (
+				270C15BC1DAE789C00C9BB4D /* ExchangingMoneyOptimally */,
 				27233E3F1DAA9D1D00845391 /* DetectingAnomaliesInCurrencyExchangeRates */,
 				270E4E601DA717EC006FBECD /* ComputingTheMinimumCostOfAFlight */,
 			);
@@ -244,6 +272,7 @@
 				27D02ABF1DA016A800017D8F /* CheckingWhetherAGraphIsBipartite */,
 				270E4E5F1DA717EC006FBECD /* ComputingTheMinimumCostOfAFlight */,
 				27233E3E1DAA9D1D00845391 /* DetectingAnomaliesInCurrencyExchangeRates */,
+				270C15BB1DAE789C00C9BB4D /* ExchangingMoneyOptimally */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -329,6 +358,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		270C15BA1DAE789C00C9BB4D /* ExchangingMoneyOptimally */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 270C15C11DAE789C00C9BB4D /* Build configuration list for PBXNativeTarget "ExchangingMoneyOptimally" */;
+			buildPhases = (
+				270C15B71DAE789C00C9BB4D /* Sources */,
+				270C15B81DAE789C00C9BB4D /* Frameworks */,
+				270C15B91DAE789C00C9BB4D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExchangingMoneyOptimally;
+			productName = ExchangingMoneyOptimally;
+			productReference = 270C15BB1DAE789C00C9BB4D /* ExchangingMoneyOptimally */;
+			productType = "com.apple.product-type.tool";
+		};
 		270E4E5E1DA717EC006FBECD /* ComputingTheMinimumCostOfAFlight */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 270E4E631DA717EC006FBECD /* Build configuration list for PBXNativeTarget "ComputingTheMinimumCostOfAFlight" */;
@@ -490,6 +536,10 @@
 			attributes = {
 				LastUpgradeCheck = 0800;
 				TargetAttributes = {
+					270C15BA1DAE789C00C9BB4D = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
 					270E4E5E1DA717EC006FBECD = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
@@ -549,11 +599,20 @@
 				27D02ABE1DA016A800017D8F /* CheckingWhetherAGraphIsBipartite */,
 				270E4E5E1DA717EC006FBECD /* ComputingTheMinimumCostOfAFlight */,
 				27233E3D1DAA9D1D00845391 /* DetectingAnomaliesInCurrencyExchangeRates */,
+				270C15BA1DAE789C00C9BB4D /* ExchangingMoneyOptimally */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		270C15B71DAE789C00C9BB4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				270C15BE1DAE789C00C9BB4D /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		270E4E5B1DA717EC006FBECD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -629,6 +688,95 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		270C15BF1DAE789C00C9BB4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		270C15C01DAE789C00C9BB4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		270E4E641DA717EC006FBECD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1445,6 +1593,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		270C15C11DAE789C00C9BB4D /* Build configuration list for PBXNativeTarget "ExchangingMoneyOptimally" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				270C15BF1DAE789C00C9BB4D /* Debug */,
+				270C15C01DAE789C00C9BB4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		270E4E631DA717EC006FBECD /* Build configuration list for PBXNativeTarget "ComputingTheMinimumCostOfAFlight" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1461,6 +1617,7 @@
 				27233E431DAA9D1D00845391 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2736D2AE1D9D8C170058EF6B /* Build configuration list for PBXNativeTarget "CheckingWhetherAnyIntersectionInACityIsReachableFromAnyOther" */ = {
 			isa = XCConfigurationList;
